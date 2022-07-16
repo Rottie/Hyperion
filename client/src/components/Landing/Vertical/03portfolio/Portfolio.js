@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import PortfolioList from "../portfolioList/PortfolioList";
+import PortfolioList from "../03portfolioList/PortfolioList";
 import "./portfolio.scss";
 import {
   featuredPortfolio,
@@ -7,7 +7,7 @@ import {
   mobilePortfolio,
   designPortfolio,
   contentPortfolio,
-} from "../data";
+} from "../../data";
 
 export default function Portfolio() {
   const [selected, setSelected] = useState("featured");
