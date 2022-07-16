@@ -1,10 +1,5 @@
-import Create from "../users/Create/Create";
-import Edit from "../users/Edit/Edit";
-import Delete from "../users/Delete/Delete";
-import User from "../users/users";
-
-import Home from "../Home/Home";
-import Home2 from "../Home2/Home2";
+// import Landing from "../Landing/landing";
+import Landing from "../Landing/landing";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -17,18 +12,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/">
-            <Route index element={<Home />} />
-
-            <Route path="users">
-              <Route index element={<User />} />
-              <Route path="add" element={<Create />} />
-              <Route path=":userId" element={<Edit />} />
-              <Route path="delete" element={<Delete />} />
-            </Route>
-
-            <Route path="products">
-              <Route index element={<Home2 />} />
-            </Route>
+            <Route index element={<Landing />} />
           </Route>
         </Routes>
       </BrowserRouter>
