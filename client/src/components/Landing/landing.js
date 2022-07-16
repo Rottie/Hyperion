@@ -1,5 +1,6 @@
 import Topbar from "./Horizontal/00topbar/Topbar";
 import Intro from "./Horizontal/01intro/Intro";
+import Pricing from "./Vertical/02Pricing/Pricing";
 import Portfolio from "./Vertical/03portfolio/Portfolio";
 import Works from "./Vertical/04works/Works";
 import Testimonials from "./Vertical/05testimonials/Testimonials";
@@ -16,9 +17,11 @@ function Landing() {
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <div className="sections">
         <Intro />
+        <Pricing />
         <Portfolio />
         <Works />
         <Testimonials />
+
         <Contact />
       </div>
     </div>
